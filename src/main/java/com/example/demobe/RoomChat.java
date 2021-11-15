@@ -3,13 +3,12 @@ import javax.persistence.*;
 @Entity
 public class RoomChat {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy =GenerationType.IDENTITY)
     private Long id;
 
     private String person1;
 
     private String  person2;
-
     public Long getId() {
         return id;
     }
@@ -33,4 +32,8 @@ public class RoomChat {
     public void setPerson2(String person2) {
         this.person2 = person2;
     }
+
+
+
+
 }
